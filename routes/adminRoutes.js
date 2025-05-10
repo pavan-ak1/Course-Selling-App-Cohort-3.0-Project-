@@ -1,17 +1,17 @@
 const express= require('express');
 const router = express.Router();
-
+const {adminModel} = require('../db');
 
 router.post('/signup', (req,res)=>{
     res.json({
-        msg:'signup endpoint',
+        message:'signup endpoint',
     })
 })
 
 
 router.post('/signin', (req,res)=>{
     res.json({
-        msg:'signin endpoint',
+        message:'signin endpoint',
     })
 })
 
@@ -25,7 +25,7 @@ router.post('/course', (req,res)=>{
 router.get('/course/bulk', (req,res)=>{
     res.json({
         msg:'Gets all Courses created',
-        
+
     })
 })
 
