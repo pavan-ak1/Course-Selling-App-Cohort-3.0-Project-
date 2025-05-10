@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
-console.log('Connected to db');
 
-mongoose.connect(process.env.MONGO_URI);
+
 
 const userSchema = new mongoose.Schema({
     email: {
@@ -21,7 +20,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-
 });
 
 const adminSchema = new mongoose.Schema({
